@@ -15,8 +15,6 @@ const Home = () => {
          <CreditImage/>
          <Footer/>
 
-         {/* <br/><br/><br/><br/><br/>
-        <Landing/> */}
         
          
     

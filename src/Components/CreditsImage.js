@@ -7,7 +7,7 @@ const CreditImage = ()=>{
   return (
     <div className={styles.landing}>
       
-      <div className="container" style={{backgroundColor: '#3D6783', height: 850,  maxWidth: 'none',}}>
+      <div className="container" style={{backgroundColor: '#3D6783', height: 850,  maxWidth: 'none'}}>
       <div className={styles.rectangleParent}>
         <div className={styles.groupChild} />
         <div className={styles.groupItem} />
