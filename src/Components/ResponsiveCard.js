@@ -1,7 +1,8 @@
 import React from 'react';
 import img from '../images/image-ai-image.png'
+import styles from "./Landing.module.css";
 
-const ResponsiveCard = ({ src, alt, author, url }) => {
+const ResponsiveCard = ({ src, alt, author, url, parent, child1, child2, child3, text, credit, photo }) => {
   const cardStyles = {
     borderRadius: '25px',
     backgroundColor: 'white',
@@ -53,14 +54,17 @@ const ResponsiveCard = ({ src, alt, author, url }) => {
 
   return (
     <div className="col-lg-3 col-md-6 card-container">
-      <div className="card" style={cardStyles}>
-        <div className="card-header" style={headerStyles}></div>
-        <img className="card-img-top" style={imageStyles} alt="" src={img} />
-        <div className="card-body">
-          <h5 className="card-title" style={titleStyles}>COMPANION AI</h5>
-          <p className="card-text" style={creditStyles}>1 CREDIT</p>
-        </div>
-        <div className="card-footer" style={footerStyles}></div>
+      <div className={styles.groupDiv}>
+        <div className={styles.groupChild6} />
+        <div className={styles.groupChild7} />
+        <div className={styles.groupChild8} />
+        <b className={styles.textAi2}>TEXT AI</b>
+        <div className={styles.credits2}>10 CREDITS</div>
+        <img
+          className={styles.companionAiImageIcon}
+          alt=""
+          src="/textaiimage@2x.png"
+        />
       </div>
     </div>
   );

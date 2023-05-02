@@ -4,14 +4,10 @@ import styles from "./Landing.module.css";
 const Footer = () => {
   return (
     <div className="container" style={{backgroundColor: '#3080AC', height: 640, maxWidth: 'none',}}>
-        
-       
-      {/* <div className={styles.landingInner}  style={{width:'100%'}}/> */}
-
 
       <div className="row">
 
-        <div className="col">
+        <div className="col-md-3 mb-4">
             
             <div className={styles.Aifooter} >AI</div>
               <img className={styles.landingChild1} alt="" src="/line-8.svg" />
@@ -24,7 +20,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className="col">
+        <div className="col-md-3 mb-4">
             <img
             className={styles.footerImageIcon}
             alt=""
@@ -32,9 +28,9 @@ const Footer = () => {
           />
         </div>
 
-        <div className="col">
+        <div className="col-md-3 mb-4">
             
-        <div className="col">
+        
             
             <div className={styles.quickLinks}>Quick Links</div>
             <img className={styles.landingChild2} alt="" src="/line-8.svg" />
@@ -43,14 +39,12 @@ const Footer = () => {
               <div className={styles.imageAi1}>Image Ai</div>
               <div className={styles.videosAi1}>Videos Ai</div>
               <div className={styles.companionAi1}>Companion Ai</div>
-              {/* <div className={styles.textAiParent}>AI</div> */}
             </div>
-          </div>
-        </div>
+      </div>
+        
 
-        <div className="col">
+        <div className="col-md-3">
               <div className={styles.socialMedia}>Social Media</div>
-              {/* <img className={styles.lineIcon} alt="" src="/line-6.svg" /> */}
               <img className={styles.landingChild3} alt="" src="/line-8.svg" />
 
               <div className={styles.groupParent} style={{marginLeft:'90px'}}>

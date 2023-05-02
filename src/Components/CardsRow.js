@@ -10,12 +10,40 @@ const CardsRow = () => {
           alt="Image 1"
           author="Author 1"
           url="https://example.com"
+          parent = {{
+            position:'absolute',
+            top: '50px',
+            left: '484px',
+            width: '370px',
+            height: '560px',
+            fontWeight: '34.16px',
+          }}
+          child1
+          child2
+          child3
+          text
+          credit
+          photo
         />
         <ResponsiveCard
           src="https://via.placeholder.com/150"
           alt="Image 2"
           author="Author 2"
           url="https://example.com"
+          parent = {{
+            position:'absolute',
+            top: '60px',
+            left: '5004px',
+            width: '370px',
+            height: '560px',
+            fontWeight: '34.16px',
+          }}
+          child1
+          child2
+          child3
+          text
+          credit
+          photo
         />
         <ResponsiveCard
           src="https://via.placeholder.com/150"

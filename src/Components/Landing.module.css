@@ -58,18 +58,10 @@
   background-color: #174665;
   height: 850px;
 }
-.Aifooter{
-  position: absolute;
-  top: 1768px;
-  margin-left: 85px;
-  font-size: var(--font-size-13xl);
-  font-weight: 900;
-  color: #FFFFFF;
-}
 .landingInner {
   top: 1657px;
   background-color: var(--color-steelblue);
-  height: 635px;
+  height: 628px;
 }
 .socialMedia {
   position: absolute;
@@ -77,7 +69,6 @@
   left: 1431px;
   font-size: var(--font-size-13xl);
   font-weight: 900;
-  color: #FFFFFF;
 }
 .lineIcon {
   position: absolute;
@@ -92,7 +83,6 @@
   left: 1102px;
   font-size: var(--font-size-13xl);
   font-weight: 900;
-  color: #FFFFFF;
 }
 .companionAi1,
 .imageAi1,
@@ -102,7 +92,6 @@
   top: 156px;
   left: 0;
   font-weight: 500;
-  color: #FFFFFF;
 }
 .companionAi1,
 .imageAi1,
@@ -124,27 +113,25 @@
   height: 183px;
   font-size: var(--font-size-3xl);
 }
-
 .landingChild1 {
   position: absolute;
   top: 1818px;
-  margin-left: 60px;
+  left: 1100px;
   width: 156px;
   height: 4px;
-  color: #FFFFFF;
 }
 .landingChild2,
 .landingChild3,
 .lineDiv {
   position: absolute;
   top: 1815.5px;
-  left: 1095px;
+  left: 1104.5px;
   width: 156px;
   height: 5px;
 }
 .landingChild3,
 .lineDiv {
-  left: 1420px;
+  left: 1432.5px;
 }
 .lineDiv {
   top: 2177.5px;
@@ -159,7 +146,6 @@
   position: absolute;
   top: 2210px;
   left: 93px;
-  color: #FFFFFF;
 }
 .footerImageIcon {
   top: 1868px;
@@ -181,7 +167,6 @@
   left: 0;
   display: inline-block;
   width: 479px;
-  color: #FFFFFF;
 }
 .artificialIntelligenceAi {
   top: 47px;
@@ -431,7 +416,7 @@
   width: 138px;
   height: 29.61px;
 }
-.pinterest, .telegram {
+.pinterest {
   position: absolute;
   top: 2px;
   left: 72px;
@@ -441,7 +426,6 @@
   color: var(--color-white);
   text-align: left;
 }
-
 .vectorIcon4 {
   position: absolute;
   height: 100%;
@@ -518,7 +502,6 @@
   width: 173px;
   height: 279.24px;
   font-size: 22.52px;
-  color: #FFFFFF;
 }
 .groupChild6,
 .groupChild7,
@@ -605,6 +588,8 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+
+
 
 .navbarCustom {
   height: 120px;
