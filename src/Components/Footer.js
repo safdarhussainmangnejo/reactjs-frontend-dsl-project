@@ -1,90 +1,73 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button } from "react-bootstrap";
-import styles from "./Landing.module.css";
+import twitter from '../images/twitter-icon.png';
+import medium from '../images/medium-icon.png';
+import tiktok from '../images/tiktok-icon.png';
+import linkedin from '../images/linked-in-icon.png';
+import pinterest from '../images/pinterest-icon.png';
+import telegram from '../images/telegram-icon.png';
 const Footer = () => {
   return (
-    <div className="container" style={{backgroundColor: '#3080AC', height: 640, maxWidth: 'none',}}>
+            <div className="row" style={{backgroundColor:'#3080AC', color:'white'}}>
 
-      <div className="row">
-
-        <div className="col-md-3 mb-4">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" style={{padding:'50px'}}>
             
-            <div className={styles.Aifooter} >AI</div>
-              <img className={styles.landingChild1} alt="" src="/line-8.svg" />
-              <div className={styles.aiCanHelpYouAutomateTasksParent}>
-                <b className={styles.aiCanHelp}>AI can help you automate tasks.</b>
-                <div className={styles.artificialIntelligenceAi}>
-                  Artificial Intelligence (AI) is the simulation of human intelligence
-                  processes by machines, especially computer systems.
-              </div>
+                <h1>AI</h1>
+                <div style={{width:'120px', border:'3px solid white', borderRadius:'5px'}}></div>
+                <br/>
+                <h3>AI can help you automate tasks.</h3>
+
+                <h5>
+                    Artificial Intelligence (AI) is the simulation of human intelligence
+                    processes by machines, especially computer systems.
+                </h5>
+
             </div>
-        </div>
 
-        <div className="col-md-3 mb-4">
-            <img
-            className={styles.footerImageIcon}
-            alt=""
-            src="/footerimage@2x.png"
-          />
-        </div>
 
-        <div className="col-md-3 mb-4">
-            
-        
-            
-            <div className={styles.quickLinks}>Quick Links</div>
-            <img className={styles.landingChild2} alt="" src="/line-8.svg" />
-            <div className={styles.textAiParent}>
-              <div className={styles.textAi1}>Text Ai</div>
-              <div className={styles.imageAi1}>Image Ai</div>
-              <div className={styles.videosAi1}>Videos Ai</div>
-              <div className={styles.companionAi1}>Companion Ai</div>
+            <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12" style={{padding:'100px'}}>
+                <img
+                alt="image"
+                src="/footerimage@2x.png"
+                width='200px'
+            />
             </div>
-      </div>
-        
 
-        <div className="col-md-3">
-              <div className={styles.socialMedia}>Social Media</div>
-              <img className={styles.landingChild3} alt="" src="/line-8.svg" />
+            <div className="col-xl-5 col-lg-5 col-md-6 col-sm-12" style={{padding:'20px'}}>
+            <div className="row" style={{padding:'20px'}}>
 
-              <div className={styles.groupParent} style={{marginLeft:'90px'}}>
-                <button className={styles.vectorParent} autoFocus>
-                  <img className={styles.vectorIcon1} alt="" src="/vector1.svg" />
-                  <div className={styles.twitter}>Twitter</div>
-                </button>
-                <div className={styles.vectorGroup}>
-                  <img className={styles.vectorIcon1} alt="" src="/vector2.svg" />
-                  <div className={styles.linkedIn}>Linked In</div>
-                </div>
-                <button className={styles.tiktokParent} autoFocus>
-                  <div className={styles.tiktok}>Tiktok</div>
-                  <img className={styles.vectorIcon3} alt="" src="/vector3.svg" />
-                </button>
-                <button className={styles.pinterestParent} autoFocus>
-                  <div className={styles.pinterest}>Pinterest</div>
-                  <img className={styles.vectorIcon4} alt="" src="/vector4.svg" />
-                </button>
-                <button className={styles.mediumParent} autoFocus>
-                  <div className={styles.twitter}>Medium</div>
-                  <img className={styles.vectorIcon5} alt="" src="/vector5.svg" />
-                </button>
-                <button className={styles.telegramParent} autoFocus>
-                  <div className={styles.telegram} style={{color:'#FFFFFF'}}>Telegram</div>
-                  <img className={styles.vectorIcon6} alt="" src="/vector6.svg" />
-                </button>
-              </div>
-          </div>
-       
-      </div>
-      <div className="row">
-        <div className="col">
-          <div className={styles.lineDiv} />
-          <div className={styles.aiAll}>© AI | All rights reserved.</div>
+            <div className="col">
+                
+                <h1>Quick Links</h1>
+                <div style={{width:'180px', border:'3px solid white', borderRadius:'5px'}}></div>
+                <br/>
+                <h4>Text Ai</h4>
+                <h4>Image Ai</h4>
+                <h4>Videos Ai</h4>
+                <h4>Companion Ai</h4>
+            </div>
+
+
+            <div className="col">
+                <h1>Social Media</h1>
+                <div style={{width:'180px', border:'3px solid white', borderRadius:'5px'}}></div>
+                <br/>
+                    
+                    <h4><img src={twitter} alt='icon' width='25px'/> &nbsp; Twitter</h4>
+                    <h4><img src={tiktok} alt='icon' width='25px'/> &nbsp; TikTok</h4>
+                    <h4><img src={linkedin} alt='icon' width='25px'/> &nbsp; Linked In</h4>
+                    <h4><img src={pinterest} alt='icon' width='25px'/> &nbsp; Pinterest</h4>
+                    <h4><img src={medium} alt='icon' width='25px'/> &nbsp; Medium</h4>
+                    <h4><img src={telegram} alt='icon' width='25px'/> &nbsp; Telegram</h4>
+            </div>
+            </div>
+
         </div>
-      </div>
-    </div>
- 
-    
+
+        <hr/>
+        <h6> &nbsp; © AI | All rights reserved.</h6>
+        <br/>
+
+        </div>
   );
 };
 

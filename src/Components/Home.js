@@ -1,9 +1,8 @@
-import CreditImage from './CreditsImage'
+import Navbar from './Navbar';
+import DisplayImages from './DisplayImages';
+import CreditImage from './CreditsImage';
 import Footer from './Footer';
-import ResponsiveNavbar from './ResponsiveNavbar';
-import ShowImages from './ShowImages';
-import CardsRow from './CardsRow'
-import ShowCards from './ShowCards';
+
 
 const Home = () => {
     
@@ -11,12 +10,15 @@ const Home = () => {
     return (
         <>
          
-         <ResponsiveNavbar/>
-         <ShowImages/>
+         <Navbar/>
+         <DisplayImages/>
          <CreditImage/>
-        
          <Footer/>
-        </>
+
+        
+         
+    
+    </>
     )
 
 

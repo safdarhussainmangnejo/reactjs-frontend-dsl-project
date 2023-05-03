@@ -1,44 +1,43 @@
 import * as React from 'react';
 import dslogo from '../images/ds-logo.png'
-import styles from "./Landing.module.css";
+
 
 const Navbar = () => {
 
     return(
-        
 
-    
-    <nav className="navbar navbar-expand-lg" style={{height:120, backgroundColor: '#3080AC'}}>
-        <div className="container">
-            <a className="navbar-brand" href="#">
-            <img className={styles.image13Icon} src={dslogo} alt=""  />
-            </a>
+      <nav class="navbar navbar-expand-lg bg-light" >
+        <div class="container-fluid" style={{backgroundColor:'#3080AC', padding:'15px', marginBottom:'-8px', marginTop:'-5px', }}>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <img src={dslogo} width='68px'/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" style={{display:'grid', justifyContent:'right', fontSize:'28px' }}>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style={{color:'white', paddingRight:'80px'}} href="#">COMPANION AI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style={{color:'white', paddingRight:'80px'}} href="#">TEXT AI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style={{color:'white', paddingRight:'80px'}} href="#">IMAGE AI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style={{color:'white', paddingRight:'80px'}} href="#">VIDEOS AI</a>
+              </li>
+              {/* <li class="nav-item">
+                <a class="nav-link" style={{color:'white', paddingRight:'80px'}} href="#">ACCOUNT</a>
+              </li>
+              <li class="nav-item">
+                <button className='btn btn-secondary btn-lg'>LOGIN</button>
+              </li> */}
+            </ul>
+          </div>
         </div>
-  <div className="container-fluid">
+      </nav>
     
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#" style={{fontSize: '20px', color: '#FFFFFF'}}>COMPANION AI</a>
-        </li>
-        <li className="nav-item" style={{paddingLeft:'80px'}}>
-          <a className="nav-link active" aria-current="page" href="#" style={{fontSize: '20px', color: '#FFFFFF'}}>TEXT AI</a>
-        </li>
-        <li className="nav-item" style={{paddingLeft:'80px'}}>
-          <a className="nav-link active" aria-current="page" href="#" style={{fontSize: '20px', color: '#FFFFFF'}}>IMAGE AI</a>
-        </li>
-        <li className="nav-item" style={{paddingLeft:'80px'}}>
-          <a className="nav-link active" aria-current="page" href="#" style={{fontSize: '20px', color: '#FFFFFF'}}>VIDEO AI</a>
-        </li>
-        
-        
-        
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-
     )
 
 }

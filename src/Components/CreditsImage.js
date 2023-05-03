@@ -1,66 +1,89 @@
-import imageai from '../images/videos-ai-image.png'
-import styles from "./Landing.module.css";
+import image1 from '../images/companion-ai-image.png';
+import image2 from '../images/text-ai-image.png';
+import image3 from '../images/image-ai-image.png';
+import image4 from '../images/videos-ai-image.png';
+
 const CreditImage = ()=>{
 
     
         
   return (
-    <div className={styles.landing}>
-      
-      <div className="container" style={{backgroundColor: '#3D6783', height: 850,  maxWidth: 'none'}}>
-      <div className={styles.rectangleParent}>
-        <div className={styles.groupChild} />
-        <div className={styles.groupItem} />
-        <img className={styles.groupInner} alt="" src="/rectangle-99.svg" />
-        <div className={styles.companionAi2}> COMPANION AI</div>
-          
-        
-        <div className={styles.credits}>1 CREDIT</div>
-        <img
-          className={styles.companionAiImageIcon}
-          alt=""
-          src="/companionaiimage@2x.png"
-        />
-      </div>
-      <div className={styles.rectangleGroup}>
-        <div className={styles.rectangleDiv} />
-        <div className={styles.groupChild1} />
-        <div className={styles.groupChild2} />
-        <b className={styles.imageAi2}>IMAGE AI</b>
-        <div className={styles.credits}>50 CREDITS</div>
-        <img
-          className={styles.companionAiImageIcon}
-          alt=""
-          src="/imageaiimage@2x.png"
-        />
-      </div>
-      <div className={styles.rectangleContainer}>
-        <div className={styles.rectangleDiv} />
-        <div className={styles.groupChild1} />
-        <div className={styles.groupChild5} />
-        <b className={styles.videosAi2}>VIDEOS AI</b>
-        <button className={styles.credits1}>1000 CREDITS</button>
-        <img
-          className={styles.companionAiImageIcon}
-          alt=""
-          src="/videosaiimage@2x.png"
-        />
-      </div>
-      
-      <div className={styles.groupDiv}>
-        <div className={styles.groupChild6} />
-        <div className={styles.groupChild7} />
-        <div className={styles.groupChild8} />
-        <b className={styles.textAi2}>TEXT AI</b>
-        <div className={styles.credits2}>10 CREDITS</div>
-        <img
-          className={styles.companionAiImageIcon}
-          alt=""
-          src="/textaiimage@2x.png"
-        />
-      </div>
-      </div>
-    </div>
+            <div className='row' style={{padding:'50px', backgroundColor:'#3D6783'}}>
+            <div className='col-xl-3 col-lg-3 col-md-6 col-sm-12' style={{padding:'10px'}}>
+
+
+                <div class="card" styles="width: 18rem;" style={{textAlign:'center', backgroundColor:'#3080AC', color:'white', border:'0px'}}>
+                    <div class="card-body">
+                        <h2 class="card-title">COMPANION AI</h2>
+                    </div>
+                    <div style={{backgroundColor: 'white', padding:'10px'}}>
+                        <img src={image1} class="card-img-top" alt="..."/>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">1 CREDIT</h3>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            
+            <div className='col-xl-3 col-lg-3 col-md-6 col-sm-12' style={{padding:'10px'}}>
+
+
+                <div class="card" styles="width: 18rem;" style={{textAlign:'center', backgroundColor:'#3080AC', color:'white', border:'0px'}}>
+                    <div class="card-body">
+                        <h2 class="card-title">TEXT AI</h2>
+                    </div>
+                    <div style={{backgroundColor: 'white', padding:'10px'}}>
+                        <img src={image2} class="card-img-top" alt="..."/>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">10 CREDIT</h3>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div className='col-xl-3 col-lg-3 col-md-6 col-sm-12' style={{padding:'10px'}}>
+
+
+                <div class="card" styles="width: 18rem;" style={{textAlign:'center', backgroundColor:'#3080AC', color:'white', border:'0px'}}>
+                    <div class="card-body">
+                        <h2 class="card-title">IMAGE AI</h2>
+                    </div>
+                    <div style={{backgroundColor: 'white', padding:'10px'}}>
+                        <img src={image3} class="card-img-top" alt="..."/>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">50 CREDIT</h3>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div className='col-xl-3 col-lg-3 col-md-6 col-sm-12' style={{padding:'10px'}}>
+
+
+                <div class="card" styles="width: 18rem;" style={{textAlign:'center', backgroundColor:'#3080AC', color:'white', border:'0px'}}>
+                    <div class="card-body">
+                        <h2 class="card-title">VIDEOS AI</h2>
+                    </div>
+                    <div style={{backgroundColor: 'white', padding:'10px'}}>
+                        <img src={image4} class="card-img-top" alt="..."/>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">1000 CREDIT</h3>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+        </div>
   );
 };
 export default CreditImage;
