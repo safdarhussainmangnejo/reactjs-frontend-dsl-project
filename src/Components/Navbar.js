@@ -1,17 +1,19 @@
 import * as React from 'react';
 import dslogo from '../images/ds-logo.png'
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 
 const Navbar = () => {
 
     return(
-
-      <nav class="navbar navbar-expand-lg bg-light" >
-        <div class="container-fluid" style={{backgroundColor:'#3080AC', padding:'15px', marginBottom:'-8px', marginTop:'-5px', }}>
+      <nav class="navbar navbar-expand-lg bg-light" style={{top:'-10px'}}>
+        <div class="container-fluid" style={{backgroundColor:'#3080AC',  padding:'15px', marginBottom:'-17px', marginTop:'-5px'}}>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <img src={dslogo} width='68px'/>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <img src={dslogo} width='60px' style={{position:'absolute', float:'left', top:'25px', paddingLeft:'10px'}}/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            {/* <span class="navbar-toggler-icon"></span> */}
+            <span><HighlightOffIcon sx={{fontSize:'50px'}}/></span>
+            
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown" style={{display:'grid', justifyContent:'right', fontSize:'28px' }}>
             <ul class="navbar-nav">
@@ -37,7 +39,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    
     )
 
 }
