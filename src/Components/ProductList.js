@@ -33,7 +33,7 @@ const ProductList = () => {
   }
 
   useEffect(() => {
-    // Fetch data from JSON file or external API
+    // Fetch data from JSON file
     getData();
   }, []);
 
@@ -93,7 +93,8 @@ const displayProducts = () => {
   };
 
   return (
-    <div style={{margin: '0 auto', textAlign: 'center',  width: '70%', }}>
+    <div style={{margin: '0 auto', textAlign: 'center',  width: '70%', marginTop:'50px'}}>
+      <h1>Product List</h1>
       <input
         type="text"
         placeholder="Search by name"

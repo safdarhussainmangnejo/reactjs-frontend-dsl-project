@@ -1,7 +1,7 @@
 import * as React from 'react';
 import dslogo from '../images/ds-logo.png'
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
-
+import ProductList from './ProductList';
 
 const Navbar = () => {
 
@@ -18,7 +18,7 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarNavDropdown" style={{display:'grid', justifyContent:'right', fontSize:'28px' }}>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" style={{color:'white', paddingRight:'80px'}} href="#">COMPANION AI</a>
+                <a class="nav-link active" aria-current="page" href="/products" style={{color:'white', paddingRight:'80px'}} >COMPANION AI</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" style={{color:'white', paddingRight:'80px'}} href="#">TEXT AI</a>
