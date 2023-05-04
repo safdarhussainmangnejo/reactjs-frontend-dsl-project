@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./Components/Home";
+import ProductList from "./Components/ProductList";
 
 function App() {
   const action = useNavigationType();
@@ -46,6 +47,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/products" element={<ProductList />} />
     </Routes>
   );
 }
